@@ -1,4 +1,4 @@
-﻿/*----------------------------------------------------------
+/*----------------------------------------------------------
 The base color for this template is #5c87b2. If you'd like
 to use a different color start by replacing all instances of
 #5c87b2 with your new color.
@@ -291,6 +291,8 @@ to use a different color start by replacing all instances of
 	height:80%;
 }
 
+thead {background-color:#fff;}
+
 /* Zebra striping */
 .table1 tr:nth-of-type(odd) 
 { 
@@ -332,6 +334,7 @@ Force table to not be like tables anymore
 /* 
 	Hide table headers (but not display: none;, for accessibility) 
 */
+    
 thead tr 
 { 
 	position: absolute;
@@ -423,7 +426,10 @@ div.box-content {
     margin: 0;
     font-family: 'PT Sans', sans-serif !important;
 }
-.navbar {
+
+.whiteSpace {height: 50px;}
+
+.navbar { position: fixed; top: 0; width: 100%; z-index: 99;
     margin-bottom: 0;
 }
     .navbar-inner {
@@ -476,7 +482,7 @@ html ,body, #main {
         z-index: 9000;
         display: none;
         background: white;
-        opacity: 0.3;
+        opacity: 1;
         top: 0;
         left: 0;
     }   
@@ -487,15 +493,21 @@ html ,body, #main {
         z-index: 10000 !important;
     }
 
+.form1_search { position: absolute; font-size: 21px !important; color: #333333; height: 28px !important; width: 85px !important; top: -5px; left: 820px; margin: auto; padding: 5px 10px 5px 50px !important; border: 1px #ccc solid; transition: all 0.3s ease-in; background: #F5F5F5 url(search.svg) left 5px center no-repeat; border-radius: 3px; z-index: 1; }
+
+.form1_search:focus {outline: none; left: 0; width: 75% !important; background-color: #fff; border-width: 1px; transition: all 0.3s ease-out; }
+
 /* DetailsDataByMounthPartial */
-td, th {
+
+td, th { position: relative;
         text-align: center;
     }
 
-    .reason-div {
-        width: 49px;
-        height: 100%;
+    .reason-div { position: absolute; display: block; width: 95px; height: 20px !important;
+        bottom: 37px; right: -50%; margin: auto;
+        font-size: 13px !important;
         transform: rotate(-90deg);
+
     }
 
     .lack, .miss, .leave {

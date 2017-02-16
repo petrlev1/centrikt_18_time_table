@@ -31,6 +31,7 @@
 </head>
 <body>
     <div id="main">
+        <div class="whiteSpace"></div>
         <div class="navbar">
             <div class="navbar-inner">
                 <div class="pull-left">
@@ -54,6 +55,9 @@
                         
                                                   
                     </div>
+
+                    <input type="text" placeholder="Поиск" class="form1_search">
+
                 </div>                
                 <div class="pull-right">                    
                     test999                    
@@ -86,13 +90,11 @@
 
 
 <div id="main">
-    <div class="alert alert-error" style="margin: 10px; display: none;">
-        Не удалось загрузить данные
-    </div>
 
     <div id="employees">
     <table style="border: 100px !important;">
-        <tbody><tr>
+        <thead>
+        <tr>
             <th rowspan="2">ФИО</th>
 
                     <th rowspan="2">1</th>
@@ -127,6 +129,8 @@
                 Итого
             </th>
         </tr>
+            
+        
         <tr>
             <th>
                 Опозданий
@@ -136,7 +140,8 @@
                 (норма 152 часов)
             </th>
         </tr>
-        </tbody><tbody>
+            </thead>
+        <tbody>
 
                    
                 <tr data-id="9" data-fio="Косованов Антон">
@@ -386,7 +391,7 @@
 
 
     <div class="lack reason-div" title="Редактировать причину отсутствия">
-        Командировка
+        Отпуск
     </div>
 
 
@@ -400,7 +405,7 @@
 
 
     <div class="lack reason-div" title="Редактировать причину отсутствия">
-        Командировка
+        Больничный
     </div>
 
 
@@ -1917,13 +1922,14 @@
 
                     <td> 46 ч 59 мин </td>
                 </tr>
-                    <tr>
-                        <td colspan="31"></td>
-                    </tr>
+                   
                 
                   
         </tbody>
     </table>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 </div>
     <div class="overlay pos-container is-table" style="height: 900px; width: 100%; display: none;">
         <div class="inner-overlay" style="height: 436px; width: 100%; display: block;">
@@ -2182,4 +2188,8 @@
     
     
 
-<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none; padding-bottom: 0px; padding-right: 0px;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body></html>
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none; padding-bottom: 0px; padding-right: 0px;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div></body>
+
+    <script src="Scripts/table_cash.js"></script>
+
+</html>
